@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<div id="mainApp">
+    <ol>
+       <li v-for="(row, index) in somedata">
+           {{ row.value }} - Idx: {{ index }}
+       </li>
+    </ol>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+var app = new Vue({
+  el: '#mainApp',
+  data: { 
+      somedata: [
+          { value: 'Value A' },
+          { value: 'Value B' },
+          { value: 'Value C' }
+      ]
+  }
+})
+
+</script>
+

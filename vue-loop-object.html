@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<div id="mainApp">
+    <li v-for="(name, value) in somedata">
+        {{ name }}: {{ value }}
+    </li>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+var app = new Vue({
+  el: '#mainApp',
+  data: { 
+     somedata: { 
+        fieldA: 'Value A',
+        fieldB: 'Value B',
+        fieldC: 'Value C' 
+     }
+ }
+})
+
+</script>
+
