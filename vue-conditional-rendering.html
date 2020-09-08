@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<div id="mainApp">
+  <h1>{{ somedata }}</h1>
+  <div v-if="datasize > 100">Lots of Data!</div>
+  <div v-else-if="datasize > 50">Good amount of Data!</div>
+  <div v-else-if="datasize > 0">Some Data</div>
+  <div v-else-if="datasize == 0">No Data</div>
+  <div v-else>Negative Data</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+var app = new Vue({
+  el: '#mainApp',
+  data: { somedata: 'foo',
+          datasize: 51 }
+})
+
+</script>
+

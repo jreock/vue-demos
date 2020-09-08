@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<div id="mainApp">
+  <a v-bind:href="url">{{ destination }}</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+var app = new Vue({
+  el: '#mainApp',
+  data: { url: 'https://google.com',
+          destination: "Google" }
+  
+})
+
+</script>
+
